@@ -17,25 +17,23 @@ Note: This is designed to test if you understand how to pass in a function as a 
 
 ## Further - implement reduce()
 
-Using your implementation of `each()`, implement a function that reduces an array to a single value by repetitively invoking a `reducer` function on each item in the array, and returns the final value.
+Using your implementation of `each()`, implement a function that reduces an array to a single value by repetitively invoking a `reducer` function on each item in the array, and ultimately returns the final value.
 
 The function signature should be:
 
 ```js
-reduce(list, reducer, accumulator);
+reduce(list, reducer, accumulator)
 ```
 
 - `list`: input array
 - `reducer`: function that determines how to combine a current item's value with the existing cumulative value
 - `accumulator`: the initial value to start accumulating from
 
-It should be able to reduce an array of numbers into a single summed up number (one use case of reduce):
+Your `reduce()` implementation should be able to reduce an array of numbers into a single summed up number (one use case of reduce):
 
 ```js
 const numbers = [1, 2, 3];
-const sum = reduce(numbers, function(total, number){
-  return total + number;
-}, 0);
+const sum = reduce(numbers, function() { }, 0);
 
 console.log(sum);
 //=> 6
