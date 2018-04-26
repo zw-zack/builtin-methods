@@ -47,3 +47,9 @@ Hints:
 - Write pseudo-code to layout your approach generally first before coding
 
 Note: This is designed to test how well you understand callbacks and how to make use of them to solve real problems.
+
+## Resources
+ 
+- Array.prototype.forEach [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- Array.prototype.reduce [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- Possible solution: https://gist.github.com/nickangtc/65b1f5d34ffc79027919391fa1e0c918
