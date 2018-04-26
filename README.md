@@ -6,8 +6,8 @@ This is a related series of simulated technical interview questions, with guidin
 
 Implement a function `each(list, action)` that applies the `action` on every item in `list`:
 
-- `list` should be an array
-- `action` should be a function
+- `list`: input array
+- `action`: function that determines what to do with an item
 
 To test your implementation, pass in a function that console logs an item as the `action` argument, and pass in `[1, 2, 3]` as the `list` argument, as in: `each([1, 2, 3], function () { // ... })`. If your implementation is correct, you should see the numbers 1, 2, and 3 printed to Terminal sequentially.
 
@@ -25,6 +25,10 @@ The function signature should be:
 reduce(list, reducer, accumulator);
 ```
 
+- `list`: input array
+- `reducer`: function that determines how to combine a current item's value with the existing cumulative value
+- `accumulator`: the initial value to start accumulating from
+
 It should be able to reduce an array of numbers into a single summed up number (one use case of reduce):
 
 ```js
@@ -39,11 +43,9 @@ console.log(sum);
 
 Hints: 
 
+- This is very similar to the built-in [`Array.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) in JavaScript - make sure you understand what it's supposed to do before trying to implement it
 - What parameters should the `reducer()` callback function have?
-- Does your implementation rely on `reducer()` returning a value?
 - Where does your previously implemented `each()` function fit in this?
 - Write pseudo-code to layout your approach generally first before coding
 
 Note: This is designed to test how well you understand callbacks and how to make use of them to solve real problems.
-
-
